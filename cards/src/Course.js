@@ -10,7 +10,7 @@ import React from 'react'
 // }
 
 //ffc
-function Course({title,description}) {
+function Course({image,title,description}) {
     //console.log(props);
     //const title=props.title
     //const description=props.description
@@ -18,6 +18,7 @@ function Course({title,description}) {
 
     return (
         <div>
+            <img src={image} alt=""/>
             <div>{title}</div>
             <div>{description}</div>
         </div>
