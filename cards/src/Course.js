@@ -10,11 +10,19 @@ import React from 'react'
 // }
 
 //ffc
-function Course() {
+function Course({title,description}) {
+    //console.log(props);
+    //const title=props.title
+    //const description=props.description
+    //const {title,description}=props;
+
     return (
         <div>
-            Course
-        </div>);
+            <div>{title}</div>
+            <div>{description}</div>
+        </div>
+
+    );
 }
 
 export default Course;
