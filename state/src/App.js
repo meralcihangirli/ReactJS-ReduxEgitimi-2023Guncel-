@@ -1,21 +1,35 @@
 
 import './App.css';
-import {useState} from 'react';
+import Course from './Course'
+import { useState } from 'react';
+
+function getRandomCourse() {
+  const courseArray = ['Angular', 'Bootstrap', 'Csharp', 'Kompleweb']
+  return courseArray[Math.floor(Math.random() * courseArray.length)]
+}
 
 function App() {
-  const [value, setValue] = useState(0) 
+  const [courses, setCourses] = useState([])
 
-const handleClick=()=>{
- // console.log('Java')
- setValue(value+1);
-};
+  const handleClick = () => {
+    setCourses([...courses, getRandomCourse()])
+  }
 
-  return (
-    <div className="App">
-  <button onClick={handleClick} >Kurs Ekle</button>
-    <div>Kurs Sayısı:{value}</div>
-    </div>
-  );
+  const courseList = courses.map((course, index) => {
+    return <Course key={index} courseName={course} />
+  })
+
+  return <div className="App">
+    <button onClick={handleClick}>Kurs Ekle</button>
+    {/* {
+      courses.map((course,index)=>{
+return <Course key={index} courseName={course}/>
+      })
+    } */}
+
+    <div>{courseList}</div>
+  </div>;
+
 }
 
 export default App;
