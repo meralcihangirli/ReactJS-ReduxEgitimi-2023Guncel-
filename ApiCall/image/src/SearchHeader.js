@@ -1,9 +1,15 @@
-function SearchHeader() {
+function SearchHeader({ search }) {
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        debugger;
+        search('Meral')
+    }
+
     return <div className="searchDiv">
-<form className="searchForm">
-<label>Ne Arıyorsunuz?</label>
-<input/>
-</form>
+        <form onSubmit={handleFormSubmit}>
+            <label>Ne Arıyorsunuz?</label>
+            <input />
+        </form>
     </div>;
 }
 
