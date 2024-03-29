@@ -5,8 +5,8 @@ const searchImages = async (term) => {
         headers: {
             Authorization: 'Client-ID DeDpq3_jgDBWQhnDJSYk6H73FOtMwhRpetYS6cPZQik'
         }, params: {
-            query: term
-        }
+            query: term,
+        },
     })
     debugger;
     return response.data.results;
