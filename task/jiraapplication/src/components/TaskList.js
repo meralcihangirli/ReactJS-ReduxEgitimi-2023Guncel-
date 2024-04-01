@@ -1,7 +1,7 @@
 import TaskShow from "./TaskShow";
 
 function TaskList({tasks}) {
-    return (<div>
+    return (<div className="task-list">
 {tasks.map((task,index)=>{
     return (
         <TaskShow key={index} task={task}/>
