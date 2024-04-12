@@ -2,11 +2,11 @@ import Course from "./Course";
 
 function Courses({ courses,removeCourse }) {
     //console.log(courses);
-    return <div>
+    return <div className="courseMainDiv">
         <div>
             <h2>Kurslarım</h2>
         </div>
-        <div className="">
+        <div className="cardDiv">
             {
                 courses.map((course) => {
                     return (
