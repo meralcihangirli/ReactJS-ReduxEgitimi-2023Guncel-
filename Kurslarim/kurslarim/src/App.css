@@ -35,3 +35,10 @@
 .refreshDiv{
 text-align: center;
 }
+
+.prevNextBtn{
+border:none;
+background-color: white;
+font-size: 20px;
+color:red;
+}
