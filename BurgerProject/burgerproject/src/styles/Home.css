@@ -5,7 +5,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     flex-direction: column;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -15,17 +15,20 @@
     width: auto;
     margin-left: 50px;
     margin-bottom: 50px;
+    
+   
   }
   
   .order button {
     border: none;
     cursor: pointer;
-    background-color: yellowgreen;
+    background-color: rgb(57, 209, 52);
     height: 50px;
     width: 180px;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     border-radius: 30px;
+   
   }
   
   @media only screen and (max-width: 650px) {
@@ -39,7 +42,7 @@
       border-radius: 10px;
       padding: 10px;
       width: 80%;
-      display: flex;
+      display: center;
       justify-content: center;
       align-items: center;
       flex-direction: column;
