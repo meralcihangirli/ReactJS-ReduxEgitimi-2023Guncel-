@@ -1,4 +1,5 @@
 
+
 import BurgerBir from '../assets/1.png';
 import BurgerIki from '../assets/2.png';
 import BurgerUc from '../assets/3.png';
@@ -7,6 +8,7 @@ import BurgerAlti from '../assets/6.png';
 import BurgerYedi from '../assets/7.png';
 
 export const Data =[
+    
     {
     name:'Efso Burger',
     image: BurgerBir,
@@ -82,4 +84,4 @@ export const Data =[
 
 ];
 
-export default Data;
+export default Data;
